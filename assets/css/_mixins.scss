@@ -1,0 +1,17 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin fonts {
+    @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+@mixin navStyle ($style, $display, $padding) {
+    text-decoration: none;
+    list-style: none;
+    font-style: $style;
+    display: $display;
+    padding: $padding;
+}

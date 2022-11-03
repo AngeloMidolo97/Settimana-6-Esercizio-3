@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'mixins';
+@import 'function';
+@include fonts;
+
+*{
+    @include reset;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: map-get($colori, 'blue');
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px map-get($colori, 'arancio');;
+    position: sticky;
+    top: 5px;
+    left: 1%;
+    width: 98%;
+    a{
+        color: map-get($colori, 'bianco');
+        @include navStyle(italic, flex, 0px);
+    }
+    ul{
+        @include navStyle(italic, flex, 5px);
+    }
+    li{
+        @include navStyle(italic, flex, 10px);
+    }
+}
+
+#main {
+    display: flex;
+    max-width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    article {
+        width: 80%;
+        h1, h2{
+            line-height: 2em;
+        }
+        
+        a {
+            color: map-get($colori, 'arancio');
+            font-style: italic;
+        }
+        button {
+            background-color: map-get($colori, 'arancio');
+            padding: 8px;
+            margin: 8px 3px;
+            border: 3px outset white;
+            color: white;
+        }
+    }
+
+    aside{
+        li{
+            @include navStyle(normal, flex, 1em);
+            border-bottom: 1px dashed gray;
+            width: 150px;
+        }
+        li:hover {
+            background-color: map-get($colori, 'grigio');
+        }
+    }
+}
+
+form{
+    margin-top: 10px;
+    input, textarea{
+        margin: 5px;
+    }
+}
+
+blockquote {
+    padding-left: 2.5rem;
+    margin-top: 2em;
+    cite{
+        line-height: 2.5rem;
+    }
+}
+
+#footer {
+    background-color: map-get($colori, 'azzurro');
+    height: 100px;
+    margin-top: 40px;
+}

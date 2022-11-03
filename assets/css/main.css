@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #170a48;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px #ffa500;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  left: 1%;
+  width: 98%;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  font-style: italic;
+  display: flex;
+  padding: 0px;
+}
+header ul {
+  text-decoration: none;
+  list-style: none;
+  font-style: italic;
+  display: flex;
+  padding: 5px;
+}
+header li {
+  text-decoration: none;
+  list-style: none;
+  font-style: italic;
+  display: flex;
+  padding: 10px;
+}
+
+#main {
+  display: flex;
+  max-width: 80vw;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#main article {
+  width: 80%;
+}
+#main article h1, #main article h2 {
+  line-height: 2em;
+}
+#main article a {
+  color: #ffa500;
+  font-style: italic;
+}
+#main article button {
+  background-color: #ffa500;
+  padding: 8px;
+  margin: 8px 3px;
+  border: 3px outset white;
+  color: white;
+}
+#main aside li {
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  display: flex;
+  padding: 1em;
+  border-bottom: 1px dashed gray;
+  width: 150px;
+}
+#main aside li:hover {
+  background-color: gray;
+}
+
+form {
+  margin-top: 10px;
+}
+form input, form textarea {
+  margin: 5px;
+}
+
+blockquote {
+  padding-left: 2.5rem;
+  margin-top: 2em;
+}
+blockquote cite {
+  line-height: 2.5rem;
+}
+
+#footer {
+  background-color: #6285f9;
+  height: 100px;
+  margin-top: 40px;
+}/*# sourceMappingURL=main.css.map */
